@@ -1,4 +1,5 @@
 - Error showing character fixed
 - Sleep function to slow down the speed of Tank
-- Some functions to set the Console Screen but somehow does't work??
-- New print error of the Tank on the Console Screen
+- Showing person immediately
+- Some functions to modify the Console Screen but somehow does't work??
+- New print error of the Tank on the Console Screen (fixed)
