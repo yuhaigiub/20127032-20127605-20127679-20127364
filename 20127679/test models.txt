@@ -1,0 +1,27 @@
+bird: length 3 width 6
+  __
+<('>)_
+   \
+
+dinosaur: length 4 width 7
+  _
+[' |
+ '\ \_
+  [___>
+
+car: length 3 width 8
+   ____
+  /[]__\
+[*O---O)
+
+tank: length 3 width 9
+   _____
+==/[] []|
+ (______)
+
+player: length 4 width 3
+
+ O
+<|v
+ ^
+/ \
