@@ -80,7 +80,7 @@ void ShowScrollbar(BOOL Show)
 }
 
 int main() {
-	SetWindowSize(50,50);
+	SetWindowSize(150,150);
 	DisableResizeWindow();
 	ShowScrollbar(0);
 
@@ -92,8 +92,8 @@ int main() {
 	int xT = 30, yT = 30;
 	while (true) {
 		DeleteObjectSprite(xT, yT, tankSprite);
-		if (xT < 0) {
-			xT = 45;
+		if (xT == 0) {
+			xT = 30;
 		}
 		else {
 			xT--;
