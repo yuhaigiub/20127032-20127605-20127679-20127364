@@ -90,6 +90,7 @@ int main() {
 	ReadObjectSprite("Tank.txt", tankSprite);
 	int xP = 3, yP = 3;
 	int xT = 30, yT = 30;
+	DrawObject(xP, yP, playerSprite);
 	while (true) {
 		DeleteObjectSprite(xT, yT, tankSprite);
 		if (xT == 0) {
