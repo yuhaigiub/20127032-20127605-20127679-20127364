@@ -3,25 +3,48 @@ bird: length 3 width 6
 <('>)_
    \
 
+  __
+_(<')>
+  /
+
 dinosaur: length 4 width 7
   _
 [' |
  '\ \_
   [___>
+  
+    _
+   | ']
+ _/ /'
+<___]
 
 car: length 3 width 8
    ____
   /[]__\
 [*O---O)
 
+ ____
+/__[]\
+(O---O*]
+
 tank: length 3 width 9
-   _____
-==/[] []|
- (______)
+    _____
+===/[] []|
+  (_0__0_)
 
-player: length 4 width 3
+ ____
+|[] []\===
+(_0__0_)
 
+player: 
+stickman: length 4 width 3
+ 
  O
 <|v
  ^
 / \
+
+happy alien thing: length 2 width 7
+
+\('v')/
+  | \ 
