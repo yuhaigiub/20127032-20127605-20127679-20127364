@@ -3,3 +3,7 @@
 - Showing person immediately
 - Some functions to modify the Console Screen but somehow does't work??
 - New print error of the Tank on the Console Screen (fixed)
+- Add player and its movement to the game (also avoid touching the border)
+- Add function SetScreenBufferSize in CConsole to change size buffer
+- SetConsoleTitle to change the title of execution file
+- ShowCur to invisible the cursor
