@@ -58,3 +58,30 @@ void CGame::DrawBorder() {
 	GotoXY(x, y++);
 	cout << "EXIT to return to main menu." << endl;
 }
+
+bool CGame::CheckCollision() {
+	for (int i = 0; i < this->birds.size(); i++)
+		if (this->people.CollisionAnimal(*this->birds[i])) {
+			this->IS_RUNNING = false;
+			return true;
+		}
+
+	for (int i = 0; i < this->dinos.size(); i++)
+		if (this->people.CollisionAnimal(*this->dinos[i])) {
+			this->IS_RUNNING = false;
+			return true;
+		}
+
+	for (int i = 0; i < this->cars.size(); i++)
+		if (this->people.CollisionVehicle(*this->cars[i])) {
+			this->IS_RUNNING = false;
+			return true;
+		}
+
+	for (int i = 0; i < this->tanks.size(); i++)
+		if (this->people.CollisionVehicle(*this->tanks[i])) {
+			this->IS_RUNNING = false;
+			return true;
+		}
+	return false;
+}
