@@ -1,9 +1,3 @@
-- Error showing character fixed
-- Sleep function to slow down the speed of Tank
-- Showing person immediately
-- Some functions to modify the Console Screen but somehow does't work??
-- New print error of the Tank on the Console Screen (fixed)
-- Add player and its movement to the game (also avoid touching the border)
-- Add function SetScreenBufferSize in CConsole to change size buffer
-- SetConsoleTitle to change the title of execution file
-- ShowCur to invisible the cursor
+#### Important file/folder
+- Update_CGameCPP: a folder that update some functions in CGame.cpp
+- CGame.h: often updating
