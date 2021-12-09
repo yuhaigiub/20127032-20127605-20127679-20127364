@@ -11,7 +11,7 @@ File: CLight.h + CLight.cpp: traffic light class
 Status: completed
 
 Objective: Implement CLight into the game, making it functional
-Status: ongoing
+Status: completed
 
 Objective: Implement sound effect and music
-Status: ongoing
+Status: completed
