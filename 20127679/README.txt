@@ -2,7 +2,7 @@ File: models.txt : models for the game
 Status: completed
 
 File: threading.cpp: thread lib demonstration
-Status: checked but won't be used
+Status: checked
 
 File: load_save.cpp: functions for loading and saving game status
 Status: updated
