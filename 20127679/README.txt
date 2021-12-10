@@ -15,3 +15,6 @@ Status: completed
 
 Objective: Implement sound effect and music
 Status: completed
+
+Objective: Implement threading
+Status: completed
