@@ -301,3 +301,98 @@ void CGame::Setting() {
 		system("cls");
 	}
 }
+
+void CGame::EndMenu() {
+	ScreenSetting(830, 480);
+	/*
+		YOU DIED
+		continue
+		main menu
+	*/
+	const string menu[2] = { "Continue","Main Menu" };
+	int pos = 0;
+	int x = 30;
+	int y = 20;
+	int flag = 0;
+	while (true) {
+		system("cls");
+		int color = rand() % 7 + 9;
+		TextColor(color);
+		GotoXY(10, 10); cout << "**    **  ******  **    **    ******   ** ******* ******     !!! !!!" << endl;
+		GotoXY(10, 11); cout << " **  **  **    ** **    **    **   **  ** **      **    **   !!! !!!" << endl;
+		GotoXY(10, 12); cout << "  ****   **    ** **    **    **    ** ** ******  **     **  !!! !!!" << endl;
+		GotoXY(10, 13); cout << "   **    **    ** **    **    **   **  ** **      **    **   !!! !!!" << endl;
+		GotoXY(10, 14); cout << "   **     ******   ******     ******   ** ******* ******     @@@ @@@" << endl;
+		TextColor(7);
+		//Inefficient
+		/*for (int i = 20; i <= 50; i++) {
+			for (int j = y - 2; j <= y + 3; j++) {
+				if (j == y - 2 || j == y + 3 || i == 20 || i == 50) {
+					GotoXY(i, j);
+					cout << "##";
+				}
+			}
+		}*/
+
+		for (int j = y - 2; j <= y + 3; j++) {
+			GotoXY(x - 10, j);
+			if (j == y - 2 || j == y + 3) {
+				cout << "################################";
+			}
+			else {
+				cout << "##";
+				GotoXY(x + 20, j);
+				cout << "##";
+			}
+		}
+
+		TextColor(7);
+		for (int i = 0; i < 2; i++) {
+			if (i == pos) {
+				TextColor(227);
+				GotoXY(x, y + i);
+				cout << "> " << menu[i];
+				TextColor(7);
+			}
+			else {
+				GotoXY(x, y + i);
+				cout << menu[i];
+			}
+		}
+		while (true) {
+			if (_kbhit()) {
+				char key = _getch();
+				if (key == 'W' || key == 'w') {
+					if (pos > 0)
+						pos--;
+					else
+						pos = 1;
+					break;
+				}
+				if (key == 'S' || key == 's') {
+					if (pos < 1)
+						pos++;
+					else
+						pos = 0;
+					break;
+				}
+				if (key == 13) {
+					switch (pos) {
+					case 0:
+						system("cls");
+						SET_IS_RUNNING(true);
+						flag = 1;
+						this->level = 1;
+						break;
+					case 1:
+						LoadingScreen("Back to Main Menu");
+						return;
+						break;
+					}
+				}
+			}
+			if (flag)
+				return;
+		}
+	}
+}
