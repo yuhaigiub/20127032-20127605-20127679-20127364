@@ -396,3 +396,23 @@ void CGame::EndMenu() {
 		}
 	}
 }
+
+void CGame::LoadingScreen(string message) {
+	ScreenSetting(830, 480);
+	system("cls");
+	drawTitle();
+	GotoXY(40, 24);
+	cout << message;
+	GotoXY(20, 25);
+	cout << "[";
+	for (int i = 0; i <= 50; i++)
+	{
+		Sleep(35);
+		GotoXY(20 + i, 25);
+		cout << "=>";
+		GotoXY(45, 26);
+		cout << i * 2 << "%";
+	}
+	system("cls");
+	ScreenSetting(1280, 720);
+}
