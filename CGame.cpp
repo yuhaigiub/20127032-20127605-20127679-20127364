@@ -416,3 +416,10 @@ void CGame::LoadingScreen(string message) {
 	system("cls");
 	ScreenSetting(1280, 720);
 }
+
+void CGame::RIP() {
+	DrawObjectSprite(this->people.GetTopLeft().GetX(), this->people.GetTopLeft().GetY(), this->RIPSprite);
+	Sleep(3000);
+	//DeleteObjectSprite(this->people.GetTopLeft().GetX(), this->people.GetTopLeft().GetY(), this->RIPSprite);
+
+}
