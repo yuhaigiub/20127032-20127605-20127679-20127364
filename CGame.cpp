@@ -228,3 +228,76 @@ void CGame::StartMenu() {
 		}
 	}
 }
+
+void CGame::Setting() {
+	system("cls");
+	string setting[] = { "Mode", "Sound" ,"Menu" };
+	int pos1 = 0;
+	const int x = 30;
+	const int y = 20;
+	int flag = 0;
+	while (true) {
+		int color = rand() % 7 + 9;
+		TextColor(color);
+		drawTitle();
+		TextColor(7);
+
+		for (int i = 20; i <= 50; i++) {
+			for (int j = y - 2; j <= y + 4; j++) {
+				if (j == y - 2 || j == y + 4 || i == 20 || i == 50) {
+					GotoXY(i, j);
+					cout << "##";
+				}
+			}
+		}
+
+		TextColor(7);
+		for (int i = 0; i < 3; i++) {
+			GotoXY(x, y + i);
+			if (i == pos1) {
+				TextColor(227);
+				cout << "> " << setting[i];
+				TextColor(7);
+			}
+			else {
+				cout << setting[i];
+			}
+		}
+		while (true) {
+			if (_kbhit()) {
+				char key = _getch();
+				if (key == 'W' || key == 'w') {
+					if (pos1 > 0)
+						pos1--;
+					else
+						pos1 = 2;
+					break;
+				}
+				if (key == 'S' || key == 's') {
+					if (pos1 < 2)
+						pos1++;
+					else
+						pos1 = 0;
+					break;
+				}
+				if (key == 13) {
+					switch (pos1) {
+					case 0:
+						//doSth
+						this->difficult_state = !this->difficult_state;
+						break;
+					case 1:
+						//doSth
+						this->music_state = !this->music_state;
+						break;
+					case 2:
+						//doSth
+						break;
+					}
+					break;
+				}
+			}
+		}
+		system("cls");
+	}
+}
