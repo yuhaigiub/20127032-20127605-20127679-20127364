@@ -1,3 +1,6 @@
+IMPORTANT: before open the .exe file, be sure to put it in the same folder as the .wav and .txt files (so that the game can read data properly)
+
+
 when open, the game will ask you whether you want to start with sound. Pick your option with a/s then enter to select.
 
 Then you will be moved to the start menu. Here we have 4 options:
