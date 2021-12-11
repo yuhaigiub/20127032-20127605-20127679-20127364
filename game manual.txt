@@ -1,0 +1,27 @@
+when open, the game will ask you whether you want to start with sound. Pick your option with a/s then enter to select.
+
+Then you will be moved to the start menu. Here we have 4 options:
+	+ Start game: start a fresh game from level 1
+	+ Load game: open a record
+		- the game will ask you to type in the name of the record you saved. If it succesfully open the record. There will be a loading screen, else there will be a message.
+	+ Setting: 
+		MODE: easy / hard, which will affect gameplay
+		SOUND: on / off, turn on / off sounds
+		BACK: back to start menu
+	+ Exit: Leave the game
+
+While playing:
+	+ Press w/a/s/d to move up/left/down/right
+	+ try to dodge obstacle
+	+ cars and tanks have traffic lights, you may want to use that to your advantage
+	+ if you get to the other side, you will level up and the game becomes harder
+	+ press p to pause
+	+ press o to save (the game will ask you to type in a name)
+	+ press l to load (the game will ask you to type in a name)
+	+ press k to go back to start menu
+
+if you hit an obstacle:
+	+ there will be sound of thing you hit being play, your character will be replace with a graveyard. Then after a while you will go to end menu. There are 2 options:
+		- Continue: play again (from level 1)
+		- Main menu: back to start menu
+
