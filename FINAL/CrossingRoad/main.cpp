@@ -90,7 +90,7 @@ bool StartWithSound() {
 					break;
 				}
 				if (key == 'S' || key == 's') {
-					if (pos < 2)
+					if (pos < 1)
 						pos++;
 					else
 						pos = 0;
