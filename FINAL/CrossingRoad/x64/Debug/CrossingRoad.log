@@ -1,6 +1,0 @@
-﻿  CGame.cpp
-D:\Downloads\CrossingRoad\CrossingRoad\CGame.cpp(927,24): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\Downloads\CrossingRoad\CrossingRoad\CGame.cpp(942,24): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\Downloads\CrossingRoad\CrossingRoad\CGame.cpp(958,23): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\Downloads\CrossingRoad\CrossingRoad\CGame.cpp(974,24): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  CrossingRoad.vcxproj -> D:\Downloads\CrossingRoad\x64\Debug\CrossingRoad.exe
