@@ -28,3 +28,4 @@ if you hit an obstacle:
 		- Continue: play again (from level 1)
 		- Main menu: back to start menu
 
+THE END
