@@ -27,5 +27,3 @@ if you hit an obstacle:
 	+ there will be sound of thing you hit being play, your character will be replace with a graveyard. Then after a while you will go to end menu. There are 2 options:
 		- Continue: play again (from level 1)
 		- Main menu: back to start menu
-
-THE END
